@@ -10,16 +10,15 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] hover:bg-[hsl(var(--primary))]/90  cursor pointer",
-        destructive:
-          "bg-[hsl(var(--destructive))] text-[hsl(var(--destructive-foreground))] hover:bg-[hsl(var(--destructive))]/90  cursor pointer",
-        outline:
-          "border border-[hsl(var(--primary))] text-[hsl(var(--primary))] bg-transparent  hover:text-[hsl(var(--foreground))] hover:border-[hsl(var(--foreground))] cursor-pointer",
+          "bg-primary text-primary-foreground hover:bg-secondary/90 cursor-pointer",
         secondary:
-          "bg-[hsl(var(--secondary))] text-[hsl(var(--secondary-foreground))] hover:bg-[hsl(var(--secondary))]/80 cursor pointer",
-        ghost:
-          "hover:bg-[hsl(var(--accent))] hover:text-[hsl(var(--accent-foreground))]",
-        link: "text-[hsl(var(--primary))] underline-offset-4 hover:underline",
+          "bg-secondary text-secondary-foreground hover:bg-primary/90 cursor-pointer",
+        destructive:
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+        outline:
+          "border border-primary text-primary bg-transparent hover:bg-secondary",
+        ghost: "hover:bg-secondary hover:text-secondary-foreground",
+        link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
         default: "h-10 px-4 py-2",
